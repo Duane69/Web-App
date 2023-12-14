@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> WEB APP </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form method="post" action="order.php">
+
+        <div class="container">
+            <h1> Shirt Order Form</h1>
+            <form method="POST" action="order.php">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="Shirt">Shirt Color:</label>
+                <select id="Shirt" name="Shirt" required>
+                    <option value="Black">Black - ₱250</option>
+                    <option value="White">White - ₱200</option>
+                    <option value="Red">Red - ₱250</option>
+                    <option value="Blue">Blue - ₱250</option>
+                    <option value="Gray">Gray - ₱250</option>
+                </select>
+
+                <div class="input-group">
+                    <label>Size:</label>
+                    <input type="radio" id="Small" name="Size" value="Small">
+                    <label for="Small">Small </label>
+
+                    <input type="radio" id="Medium" name="Size" value="Medium">
+                    <label for="Medium">Medium</label>
+
+                    <input type="radio" id="Large" name="Size" value="Large">
+                    <label for="Large">Large</label>
+
+                    <input type="radio" id="2XL" name="Size" value="2XL">
+                    <label for="2XL">2XL</label>
+
+                    <input type="radio" id="3XL" name="Size" value="3XL">
+                    <label for="3XL">3XL</label>
+
+                </div>
+                <br>
+                <div class="input-group">
+                    +50php for every size:
+                    <label for="Additional">Additional Size</label>
+                    <input type="radio" id="4XL" name="Size" value="4XL">
+                    <label for="4XL">4XL</label>
+
+                    <input type="radio" id="5XL" name="Size" value="5XL">
+                    <label for="5XL">5XL</label>
+
+                    <input type="radio" id="Customize Size" name="Size">
+                    <label for="Customize Size"> Customize Size</label>
+                </div>
+
+                <br>
+
+                <label for="Customize Size">Input your Custom Size:</label>
+                <textarea id="Customize Size" name="Customize Size" rows="2"></textarea>
+
+                <button type="submit">Place Order</button>
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>
